@@ -4,12 +4,13 @@ with open("input.txt") as file:
     
     for line in file:
         (first, second) = line.split(",")
-        (first_one, first_two) = first.split("-")
-        (second_one, second_two) = second.split("-")
+        (first_low, first_high) = first.split("-")
+        (second_low, second_high) = second.split("-")
     
-        if int(first_one) <= int(second_one) and int(first_two) >= int(second_two):
+        if int(first_low) <= int(second_low) and int(first_high) >= int(second_high):
             counter += 1
-        elif int(second_one) <= int(first_one) and int(second_two) >= int(first_two):
+        elif int(second_low) <= int(first_low) and int(second_high) >= int(first_high):
             counter += 1
     
 print(counter)
+
