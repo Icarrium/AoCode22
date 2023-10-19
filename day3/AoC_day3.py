@@ -10,7 +10,6 @@ def find_duplicate(first, second):
 
 # use ascii alphabet to covent to problems letter-to-number value           
 def ascii_lookup(letter):
-    #print(ord(letter))
     if letter.islower():
         return (ord(letter) - 96)
     else:
@@ -33,3 +32,5 @@ with open ("input.txt") as file:
         #row += 1
 
 print(f"Sum: {sum}")
+
+
