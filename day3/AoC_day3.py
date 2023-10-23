@@ -21,6 +21,7 @@ with open ("input.txt") as file:
         # find length of string; use floor div split into 2 eq len words
         split_index = (int(len(line)) // 2)
         first_word = line[:split_index]
+        print(type(first_word))
         second_word = line[split_index:]
         #print (first_word + " " + second_word)
         
